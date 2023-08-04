@@ -3,9 +3,9 @@
         const submitBtn = document.getElementById("submitBtn");
         submitBtn.addEventListener("click", function()
         {
+        const mainTxt = document.getElementById('mainTxt')
         if(mainTxt!=null)
              mainTxt.remove();
-        const mainTxt = document.getElementById('mainTxt')
         const searchPic = document.getElementById("searchPic").value;
         const numOfPic = document.getElementById("numOfPic").value;
           async function fetchAndDisplayImages() {
