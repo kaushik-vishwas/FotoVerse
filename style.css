@@ -1,0 +1,19 @@
+#mainTxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#welcome {
+    font-size: 5vw;
+    font-weight: bolder;
+}
+
+@media (max-width: 767px) {
+    .imgDiv {
+        flex-basis: 80%;
+        margin: 5px;
+        max-width: 100%;
+    }
+}
