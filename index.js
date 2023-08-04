@@ -3,6 +3,8 @@
         const submitBtn = document.getElementById("submitBtn");
         submitBtn.addEventListener("click", function()
         {
+        if(mainTxt!=null)
+             mainTxt.remove();
         const mainTxt = document.getElementById('mainTxt')
         const searchPic = document.getElementById("searchPic").value;
         const numOfPic = document.getElementById("numOfPic").value;
@@ -26,7 +28,7 @@
               if (
                 response.data && response.data.photos && response.data.photos.length > 0) {
                 // Clear previous images and texts if any
-                imageContainer.innerHTML = ""; mainTxt.remove();
+                imageContainer.innerHTML = "";
 
 
                 // Loop through the fetched photos and create and display image elements for each photo
